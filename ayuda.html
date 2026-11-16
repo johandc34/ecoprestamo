@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Encuentra los pasos para comenzar y configura los datos demostrativos.">
+    <meta name="theme-color" content="#636F07">
+    <title>Ayuda · EcoPréstamo</title>
+    <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/componentes.css">
+    <link rel="stylesheet" href="assets/css/inicio.css">
+</head>
+<body class="administracion" data-pagina="ayuda">
+    <a class="saltar" href="#principal">Saltar al contenido</a>
+    <aside class="lateral">
+        <a class="marca" href="index.html"><img src="assets/images/logo.svg" width="41" height="41" alt=""><span>Eco<span>Préstamo</span></span></a>
+        <nav aria-label="Administración">
+                <a href="dashboard.html"><span aria-hidden="true">⊞</span>Panel general</a>
+                <a href="inventario.html"><span aria-hidden="true">▧</span>Inventario</a>
+                <a href="prestamos.html"><span aria-hidden="true">↗</span>Préstamos</a>
+                <a href="devoluciones.html"><span aria-hidden="true">↙</span>Devoluciones</a>
+                <a href="historial.html"><span aria-hidden="true">◷</span>Historial</a>
+                <a href="reportes.html"><span aria-hidden="true">▤</span>Reportes</a>
+                <a href="ayuda.html" aria-current="page"><span aria-hidden="true">?</span>Ayuda</a>
+            </nav>
+        <a class="volver" href="index.html">← Volver al inicio</a>
+    </aside>
+    <div class="area">
+        <header class="barra-superior"><span>Centro comunitario</span><a href="ayuda.html">Ayuda ↗</a></header>
+        <main id="principal" class="contenido">
+            <header class="encabezado">
+                <div><h1>Ayuda</h1><p>Encuentra los pasos para comenzar y configura los datos demostrativos.</p></div>
+                
+            </header>
+            <section class="panel ayuda"><h2>Cómo usar EcoPréstamo</h2><ol><li>Registra un equipo y sus unidades en <a href="inventario.html">Inventario</a>.</li><li>Abre <a href="prestamos.html">Préstamos</a>, elige un equipo disponible y registra la salida con su fecha prevista de devolución.</li><li>Desde <a href="devoluciones.html">Devoluciones</a>, indica cuántas unidades regresaron. El saldo vuelve al inventario automáticamente.</li><li>Consulta el <a href="historial.html">Historial</a> y exporta los resultados para abrirlos en Excel.</li></ol></section><section class="panel ayuda"><h2>Datos demostrativos</h2><p>Carga tres equipos, dos préstamos y una devolución parcial en un sistema vacío.</p><button class="boton" id="demo">＋ Cargar demostración</button></section><section class="panel ayuda"><h2>Almacenamiento local</h2><p>Cada navegador y dirección del sitio conserva sus propios datos. Si borras los datos del sitio o cambias de navegador, ya no podrás ver los registros guardados aquí.</p></section>
+            <noscript>Activa JavaScript para usar los módulos de EcoPréstamo.</noscript>
+        </main>
+        <footer class="pie"><strong>EcoPréstamo</strong><span>Centro comunitario de equipos</span><a href="ayuda.html">Ayuda y uso del sistema ↗</a></footer>
+    </div>
+    <output id="aviso" aria-live="polite"></output>
+    <dialog id="dialogo" aria-labelledby="titulo-dialogo">
+        <form>
+            <h2 id="titulo-dialogo"></h2>
+            <div class="campos"></div>
+            <p class="error" role="alert"></p>
+            <div class="acciones">
+                <button type="button" class="boton secundario" id="cancelar">Cancelar</button>
+                <button type="submit" class="boton">Guardar</button>
+            </div>
+        </form>
+    </dialog>
+    <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

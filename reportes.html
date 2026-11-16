@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Consulta cuántas unidades se han prestado desde el inicio del registro.">
+    <meta name="theme-color" content="#636F07">
+    <title>Reportes · EcoPréstamo</title>
+    <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/componentes.css">
+    <link rel="stylesheet" href="assets/css/inicio.css">
+</head>
+<body class="administracion" data-pagina="reportes">
+    <a class="saltar" href="#principal">Saltar al contenido</a>
+    <aside class="lateral">
+        <a class="marca" href="index.html"><img src="assets/images/logo.svg" width="41" height="41" alt=""><span>Eco<span>Préstamo</span></span></a>
+        <nav aria-label="Administración">
+                <a href="dashboard.html"><span aria-hidden="true">⊞</span>Panel general</a>
+                <a href="inventario.html"><span aria-hidden="true">▧</span>Inventario</a>
+                <a href="prestamos.html"><span aria-hidden="true">↗</span>Préstamos</a>
+                <a href="devoluciones.html"><span aria-hidden="true">↙</span>Devoluciones</a>
+                <a href="historial.html"><span aria-hidden="true">◷</span>Historial</a>
+                <a href="reportes.html" aria-current="page"><span aria-hidden="true">▤</span>Reportes</a>
+                <a href="ayuda.html"><span aria-hidden="true">?</span>Ayuda</a>
+            </nav>
+        <a class="volver" href="index.html">← Volver al inicio</a>
+    </aside>
+    <div class="area">
+        <header class="barra-superior"><span>Centro comunitario</span><a href="ayuda.html">Ayuda ↗</a></header>
+        <main id="principal" class="contenido">
+            <header class="encabezado">
+                <div><h1>Reportes</h1><p>Consulta cuántas unidades se han prestado desde el inicio del registro.</p></div>
+                <a class='boton secundario' href='historial.html'>Ir al historial →</a>
+            </header>
+            <div class="dos paneles"><section class="panel"><h2>Equipos más prestados</h2><div id="equipos"></div></section><section class="panel"><h2>Préstamos por categoría</h2><div id="categorias"></div></section></div>
+            <noscript>Activa JavaScript para usar los módulos de EcoPréstamo.</noscript>
+        </main>
+        <footer class="pie"><strong>EcoPréstamo</strong><span>Centro comunitario de equipos</span><a href="ayuda.html">Ayuda y uso del sistema ↗</a></footer>
+    </div>
+    <output id="aviso" aria-live="polite"></output>
+    <dialog id="dialogo" aria-labelledby="titulo-dialogo">
+        <form>
+            <h2 id="titulo-dialogo"></h2>
+            <div class="campos"></div>
+            <p class="error" role="alert"></p>
+            <div class="acciones">
+                <button type="button" class="boton secundario" id="cancelar">Cancelar</button>
+                <button type="submit" class="boton">Guardar</button>
+            </div>
+        </form>
+    </dialog>
+    <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
