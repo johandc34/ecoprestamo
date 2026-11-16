@@ -31,4 +31,3 @@ Abre [EcoPréstamo en el puerto 8000](http://127.0.0.1:8000/). Puedes cargar reg
 
 La publicación usa rutas relativas y conserva los registros en el navegador. Cada origen, perfil y navegador tiene su propio almacenamiento. El sitio publicado empieza con su propio historial y GitHub Pages no sincroniza registros entre usuarios.
 
-La paleta toma como referencia los [estilos del portal de la Universidad Central](https://www.ucentral.edu.co/universidad/estilos-recursos-portal-web-institucional).
